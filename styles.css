@@ -148,9 +148,9 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
 }
 
 .card {
@@ -183,10 +183,48 @@ button {
   top: 0;
 }
 
+.blog-site {
+  text-decoration: none;
+  position: absolute;
+  color: white;
+  right: 225px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: -50px;
+}
+
+.qsn-list p {
+  color: white;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.qsn-list {
+  margin: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main-style {
+  color: white;
+}
+
+.section-part {
+  width: 70%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+
+  #histories {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .card {
