@@ -50,10 +50,15 @@
                         </p>
                     </li>
                     <li class="qsn-list">
-                        <h4>Question no 03: <br> What is Event Loop? How evetn loop work</h4>
+                        <h4>Question no 03: <br> What is Event Loop? How event loop work</h4>
                         <h6>Answer:</h6>
                         <p>
-
+                            The event loop is what allows javascript to handle thousands and thousands of requests with
+                            just a single thread.Call stack holds all the synchronous function calls. Call stack will
+                            execute code in a last in first out approach. So last the most inner nested code will be
+                            executed first and then one level above that and so on. If the function call is asynchronous
+                            it will add a new call entry on WebAPIs and the API will add a new call to the callback
+                            queue after the asynchronous action is done.
                         </p>
 
                     </li>
@@ -61,7 +66,11 @@
                         <h4>Question no 04: <br>How many time we face undefined error in JavaScript?</h4>
                         <h6>Answer:</h6>
                         <p>
-
+                            1.Variable with no value.
+                            2.Variable not declared.
+                            3.A declared variable but not yet assigned with a value (uninitialized) is by default
+                            undefined.
+                            4.When accessing a non-existing object property, JavaScript returns undefined.
                         </p>
                     </li>
                 </ul>
