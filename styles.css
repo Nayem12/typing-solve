@@ -186,13 +186,14 @@ button {
 .blog-site {
   text-decoration: none;
   position: absolute;
-  color: white;
+  color: purple;
   right: 225px;
-  font-size: 22px;
-  font-weight: 500;
-  cursor: pointer;
+  font-size: 35px;
+  font-weight: 700;
   margin-top: -50px;
 }
+
+
 
 .qsn-list p {
   color: white;
